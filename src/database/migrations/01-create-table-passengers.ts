@@ -23,7 +23,7 @@ export default {
         allowNull: false,
         defaultValue: Sequelize.NOW(),
       },
-      updatetAt: {
+      updatedAt: {
         type: Sequelize.DATE,
         allowNull: false,
         defaultValue: Sequelize.NOW(),

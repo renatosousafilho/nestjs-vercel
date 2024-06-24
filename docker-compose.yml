@@ -16,6 +16,10 @@ services:
       - POSTGRES_DB=trybecar
       - POSTGRES_HOST=database
       - POSTGRES_PORT=5432
+      # POSTGRES_USER="default"
+      # POSTGRES_HOST="ep-lively-water-a468qxex-pooler.us-east-1.aws.neon.tech"
+      # POSTGRES_PASSWORD="lL1yCH4YMfFR"
+      # POSTGRES_DATABASE="verceldb"
   database:
     image: postgres:13
     environment:
