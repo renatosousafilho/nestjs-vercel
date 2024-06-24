@@ -4,6 +4,6 @@ import { Controller, Get } from '@nestjs/common';
 export class PassengersController {
   @Get()
   getPassengers() {
-    return ['John Doe', 'Jane Doe', 'Alice Doe'];
+    return ['John Doe', 'Jane Doe', 'Alice Doe', 'Bob Doe'];
   }
 }
