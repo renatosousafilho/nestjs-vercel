@@ -1,0 +1,13 @@
+### Create a new passenger
+POST http://localhost:3000/passengers
+Content-Type: application/json
+
+{
+  "name": "Whiskers",
+  "email": "johndoe@gmail.com",
+  "phone": "1234567890"
+}
+
+### Get all passengers
+GET http://localhost:3000/passengers
+Content-Type: application/json

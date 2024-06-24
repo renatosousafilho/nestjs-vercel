@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    command: npm run start:dev
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - database
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=trybecar
+      - POSTGRES_HOST=database
+      - POSTGRES_PORT=5432
+  database:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: trybecar
+    ports:
+      - "5432:5432"
