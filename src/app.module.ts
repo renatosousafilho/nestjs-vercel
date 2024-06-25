@@ -18,12 +18,12 @@ import Passenger from './passengers/passenger.model';
       database: process.env.POSTGRES_DATABASE || 'trybecar',
       synchronize: true,
       dialectModule: pg,
-      // dialectOptions: {
-      //   ssl: {
-      //     require: true,
-      //     rejectUnauthorized: false,
-      //   },
-      // },
+      dialectOptions: {
+        ssl: {
+          require: true,
+          rejectUnauthorized: false,
+        },
+      },
       models: [Passenger],
     }),
   ],
