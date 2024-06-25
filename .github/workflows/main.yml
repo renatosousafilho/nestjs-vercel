@@ -14,9 +14,9 @@ jobs:
         uses: actions/checkout@v2
       - name: Install Vercel CLI
         run: npm install --global vercel@latest
-      - name: Install Project Dependencies
-        run: npm ci
-      - name: Build Project Artifacts
-        run: npm run build
+      # - name: Install Project Dependencies
+      #   run: npm ci
+      # - name: Build Project Artifacts
+      #   run: npm run build
       - name: Deploy Project Artifacts to Vercel
         run: vercel deploy --prod --token=${{ secrets.VERCEL_TOKEN }}
