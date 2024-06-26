@@ -1,5 +1,5 @@
 ### Create a new passenger
-POST http://localhost:3000/passengers
+POST http://localhost:3001/passengers
 Content-Type: application/json
 
 {
@@ -9,5 +9,5 @@ Content-Type: application/json
 }
 
 ### Get all passengers
-GET http://localhost:3000/passengers
+GET http://localhost:3001/passengers
 Content-Type: application/json
