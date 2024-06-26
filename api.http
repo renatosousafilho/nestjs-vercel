@@ -1,5 +1,6 @@
 ### Create a new passenger
-POST http://localhost:3001/passengers
+# POST http://localhost:3001/passengers
+POST https://nestjs-vercel-delta.vercel.app/passengers
 Content-Type: application/json
 
 {
@@ -9,5 +10,6 @@ Content-Type: application/json
 }
 
 ### Get all passengers
-GET http://localhost:3001/passengers
+# GET http://localhost:3001/passengers
+GET https://nestjs-vercel-delta.vercel.app/passengers
 Content-Type: application/json
